@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "29001469926",
+    "project_id": "fir-login-24ae6",
+    "storage_bucket": "fir-login-24ae6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:29001469926:android:a99c6c08e3e39b5ab7d027",
+        "android_client_info": {
+          "package_name": "espinoza.ariana.firebaselogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "29001469926-a55dkirkujl4n3nq6j0d21gjdhdproln.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvnIwvACcBAr0CiOn7fW7tEl03wZgvprs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "29001469926-a55dkirkujl4n3nq6j0d21gjdhdproln.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
