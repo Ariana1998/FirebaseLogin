@@ -2,12 +2,14 @@ package espinoza.ariana.firebaselogin
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.google.firebase.auth.AppCompatActivity
-import espinoza.ariana.firebaselogin.databinding.ActivitySignBinding
 import android.content.ContentValues.TAG
 import android.util.Log
 import android.widget.Toast
 import android.content.Intent
+import com.google.firebase.ktx.Firebase
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import espinoza.ariana.firebaselogin.databinding.ActivitySignInBinding
 
 class SignInActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
@@ -23,19 +25,19 @@ class SignInActivity : AppCompatActivity() {
         //Inicializamos
         // Initialize Firebase Auth
         auth = Firebase.auth
-    }
 
-    binding.signInAppCompatButton.setOnClickListener {
-        val mEmail=binding.emailEditText.text.toString()
-        val mPassword=binding.passwordEditText.text.toString(
+        binding.signInAppCompatButton.setOnClickListener {
+            val mEmail=binding.emailEditText.text.toString()
+            val mPassword=binding.passwordEditText.text.toString()
 
-        when{
-            mEmail.isEmpty() || mPassword.isEmpty() ->{
-                Toast.makeText(baseContext, "Email o contrasena incorrecta", Toast.LENGTH_SHORT).show
+                when{
+                    mEmail.isEmpty() || mPassword.isEmpty() ->{
+                        Toast.makeText(baseContext, "Email o contrasena incorrecta", Toast.LENGTH_SHORT).show()
 
-            } else ->{
-                SignIn(mEmail,mPassword)
-        }
+                    } else ->{
+                    SignIn(mEmail,mPassword)
+                }
+           }
         }
     }
 
