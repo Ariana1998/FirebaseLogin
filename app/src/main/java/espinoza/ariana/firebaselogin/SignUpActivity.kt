@@ -2,9 +2,7 @@ package espinoza.ariana.firebaselogin
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import espinoza.ariana.firebaselogin.databinding.ActivitySignInBinding
 import com.google.firebase.auth.FirebaseAuth
-import android.util.Log
 import android.util.Patterns
 import android.widget.Toast
 import com.google.firebase.auth.ktx.auth
